@@ -3,13 +3,14 @@
 	"version": "1.0.0",
 	"main": "expo-router/entry",
 	"scripts": {
+		"start": "expo start",
 		"android": "expo run:android",
 		"ios": "expo run:ios",
 		"lint": "eslint ."
 	},
 	"dependencies": {
 		"@react-native-menu/menu": "^0.9.1",
-		"expo": "~50.0.14",
+		"expo": "~52.0.0",
 		"expo-blur": "~12.9.2",
 		"expo-constants": "~15.4.5",
 		"expo-dev-client": "~3.3.11",

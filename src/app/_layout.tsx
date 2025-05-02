@@ -5,6 +5,7 @@ import { useSetupTrackPlayer } from '@/hooks/useSetupTrackPlayer'
 import { SplashScreen, Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { useCallback } from 'react'
+import { View } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import TrackPlayer from 'react-native-track-player'
@@ -25,13 +26,14 @@ const App = () => {
 	useLogTrackPlayerState()
 
 	return (
-		<SafeAreaProvider>
-			<GestureHandlerRootView style={{ flex: 1 }}>
-				<RootNavigation />
-
-				<StatusBar style="auto" />
-			</GestureHandlerRootView>
-		</SafeAreaProvider>
+		<View style={{ flex: 1 }}>
+			<SafeAreaProvider>
+				<GestureHandlerRootView style={{ flex: 1 }}>
+					<RootNavigation />
+					<StatusBar style="auto" />
+				</GestureHandlerRootView>
+			</SafeAreaProvider>
+		</View>
 	)
 }
 
